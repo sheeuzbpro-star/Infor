@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: informatika-test
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://milliondasturchi443_db_user:chortoq6maktab@informatika.asrgvt9.mongodb.net/?appName=Informatika
+      - key: JWT_SECRET
+        value: informaTest_super_secret_jwt_key_2024
+      - key: PORT
+        value: 3000
